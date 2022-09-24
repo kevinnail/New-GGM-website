@@ -1,6 +1,6 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    --header-background: rgb(0, 0, 0);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
@@ -16,10 +16,13 @@ header {
     position: sticky;
     top: 0;
     padding: 15px;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
+    height: 150px;
+    background-image: URL(/assets/GM-banner-ext.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    /* background-size: 500px; */
+    /* display: flex;
+    align-items: center; */
     gap: 10px;
 
     background-color: var(--header-background);
