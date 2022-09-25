@@ -20,6 +20,7 @@ body {
 
 header {
     position: sticky;
+    /* width: 80%; */
     top: 0;
     /* padding: 15px; */
     height: 150px;
@@ -30,10 +31,11 @@ header {
     /* display: flex;
     align-items: center; */
     gap: 10px;
-    border-radius: 30px 30px 0px 0px;
+    /* border-radius: 30px 30px 0px 0px; */
 
     /* background-color: var(--header-background); */
     box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 1);
+    z-index: 1;
 }
 
 header .logo {
@@ -43,3 +45,18 @@ header .logo {
 main {
     padding: 20px;
 }
+
+a {
+    display: inline;
+}
+/* .header {
+    transition: top 500ms ease-in-out;
+}
+
+.header.scroll-up {
+    top: 0;
+}
+
+.header.scroll-down {
+    top: -100%;
+} */

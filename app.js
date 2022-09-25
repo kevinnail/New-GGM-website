@@ -6,14 +6,14 @@ const aboutMe = document.getElementById('about-me-link');
 const gallery = document.getElementById('gallery-link');
 const recipes = document.getElementById('recipe-link');
 const contact = document.getElementById('contact-link');
+const header = document.getElementById('header');
 /* State */
 
 /* Events */
 
 /* Display Functions */
 function updateNavBar() {
-    const page = document.URL;
-
+    // const page = document.URL;
     // switch (page) {
     //     case document.URL.includes('/index.html'):
     //         home.classList.add('nav-bar');
@@ -42,4 +42,30 @@ function updateNavBar() {
         contact.classList.add('nav-bar');
     }
 }
+
+// const nav = document.querySelector('banner');
+// let previousScrollPosition = 0;
+
+// const isScrollingDown = () => {
+//     let currentScrolledPosition = window.scrollY || window.pageYOffset;
+//     let scrollingDown;
+
+//     if (currentScrolledPosition > previousScrollPosition) {
+//         scrollingDown = true;
+//     } else {
+//         scrollingDown = false;
+//     }
+//     previousScrollPosition = currentScrolledPosition;
+//     return scrollingDown;
+// };
+// const handleNavScroll = () => {
+//     if (isScrollingDown()) {
+//         header.classList.add('scroll-down');
+//         header.classList.remove('scroll-up');
+//     } else {
+//         header.classList.add('scroll-up');
+//         header.classList.remove('scroll-down');
+//     }
+// };
+
 updateNavBar();

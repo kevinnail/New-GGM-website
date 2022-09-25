@@ -16,7 +16,7 @@
     width: 100%;
 }
 .header-list li {
-    background-color: rgba(101, 150, 255, 0.7);
+    /* background-color: rgba(101, 150, 255, 0.7); */
     border: 2px solid rgb(65, 0, 177);
 
     border-radius: 20px;
@@ -36,7 +36,7 @@
     background-color: rgb(111, 111, 255);
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
-    transform: scale(1.05);
+    /* transform: scale(1); */
     box-shadow: 0px 0px 20px 5px rgb(173, 173, 173);
     color: black;
 }
@@ -71,18 +71,35 @@ img {
     display: grid;
     justify-items: center;
     grid-template-columns: auto;
+    /* width: 700px; */
 }
 
 .home-page-greeting {
     background-color: rgba(111, 170, 253, 0.7);
     font-size: 1.5em;
-    width: 70%;
+    /* width: 40%; */
     padding: 10px;
     font-family: combo, cursive;
     border-radius: 40px;
     padding: 20px;
     border: 2px solid black;
     box-shadow: 0px 0px 20px 3px black;
+    /* display: grid; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-flow: column; */
+    /* grid-template-rows: 200px; */
+    /* justify-items: center; */
+    /* width: 50px; */
+}
+
+.home-page-greeting-2 {
+    /* display: grid; */
+    /* justify-items: flex-start; */
+    /* width: 500px; */
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 20px 100px 40px 100px;
 }
 
 footer {
@@ -115,13 +132,35 @@ footer {
 }
 
 .nav-bar {
-    background-image: none;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.3),
+        rgba(82, 154, 255, 0.8),
+        rgba(255, 253, 158, 0.8),
+        rgba(0, 0, 0, 0.3)
+    );
     border: 2px solid white;
-    /* transform: scale(1.1); */
+    transform: scale(1.25);
 }
+
 .nav-bar:hover {
     background-image: none;
     border: 2px solid white;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     color: white;
 }
+a:visited {
+    color: white;
+}
+/* nav {
+    /* default styling */
+/* transition: top 500ms ease-in-out;
+}
+
+nav.scroll-up {
+    top: 0;
+}
+
+nav.scroll-down {
+    top: -100%;
+} */
