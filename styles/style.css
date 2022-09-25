@@ -1,3 +1,104 @@
 .banner-ext {
-    background-image: URL(./assets/GM-logo-1-banner.jpg);
+    background-image: URL(../assets/GM-logo-1-banner.jpg);
+    height: 100%;
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: 25%;
+    display: flex;
+
+    align-items: flex-end;
+    color: white;
+    padding: 9px;
+}
+.header-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.header-list li {
+    /* background-color: blue; */
+    border: 2px solid rgb(0, 26, 255);
+
+    border-radius: 20px;
+    font-size: 1.8em;
+    padding: 0px 15px;
+    transition-duration: 500ms;
+    box-shadow: 0px 0px 20px 5px rgb(82, 154, 255);
+}
+.header-list li:hover {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.3),
+        rgba(82, 154, 255, 0.8),
+        rgba(255, 253, 158, 0.8),
+        rgba(0, 0, 0, 0.3)
+    );
+    background-color: rgb(111, 111, 255);
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 5px rgb(173, 173, 173);
+    color: black;
+}
+.header-list li:active {
+    transform: scale(0.9);
+    color: rgb(63, 63, 63);
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0.7), rgb(255, 255, 255, 0.7));
+    height: 70vh;
+    opacity: 1;
+    /* box-shadow: 10px 10px 20px 10px white inset; */
+}
+
+.grow-kit-pic {
+    width: 700px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.grow-kit-art {
+    height: 350px;
+    opacity: 1;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+}
+
+.home-page-greeting {
+    background-color: rgba(111, 170, 253, 0.7);
+    font-size: 2em;
+    width: 70%;
+    padding: 10px;
+    font-family: combo, cursive;
+    border-radius: 40px;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px 3px black;
+}
+
+footer {
+    height: 50px;
+    background-color: black;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 20px 3px black;
+}
+.ig-icon {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    width: 50px;
+    transition-duration: 250ms;
+    border-radius: 10px;
+}
+.ig-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 3px white;
+}
+.ig-icon:active {
+    transform: scale(0.95);
 }
